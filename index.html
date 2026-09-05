@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="NEXORA Tools: ferramentas online grátis para WhatsApp, QR Code, imagens, PDF, cálculos, textos e documentos.">
+<meta name="theme-color" content="#070a10">
+<meta name="robots" content="index,follow">
+<link rel="manifest" href="manifest.json">
+<title>NEXORA Tools — Ferramentas online grátis</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#inicio"><span>◆</span> NEXORA <small>TOOLS</small></a>
+  <nav><a href="#ferramentas">Ferramentas</a><a href="#como">Como funciona</a><a href="#sobre">Sobre</a></nav>
+</header>
+
+<main id="inicio">
+<section class="hero">
+  <div class="badge">⚡ grátis • rápido • sem instalação</div>
+  <h1>Ferramentas simples.<br><strong>Resultado na hora.</strong></h1>
+  <p>WhatsApp, QR Code, imagens, PDF, cálculos, textos e documentos em um só lugar.</p>
+  <a class="hero-btn" href="#ferramentas">Explorar ferramentas ↓</a>
+  <div class="hero-stats"><span><b id="toolCount">18</b> ferramentas</span><span>⚡ processamento no navegador</span><span>🔒 seus dados ficam no seu dispositivo</span></div>
+</section>
+
+<section class="ad-slot" aria-label="Espaço reservado para anúncios">ESPAÇO PARA ANÚNCIO</section>
+
+<section id="ferramentas" class="tools-section">
+  <div class="section-head">
+    <div><span class="eyebrow">NEXORA TOOLS</span><h2>Escolha uma ferramenta</h2></div>
+    <input id="search" type="search" placeholder="🔎 Procurar ferramenta..." aria-label="Procurar ferramenta">
+  </div>
+  <div class="categories">
+    <button class="cat active" data-cat="all">Tudo</button>
+    <button class="cat" data-cat="whatsapp">WhatsApp</button>
+    <button class="cat" data-cat="qr">QR & Links</button>
+    <button class="cat" data-cat="calc">Calculadoras</button>
+    <button class="cat" data-cat="image">Imagens</button>
+    <button class="cat" data-cat="pdf">PDF</button>
+    <button class="cat" data-cat="docs">Documentos</button>
+    <button class="cat" data-cat="text">Texto</button>
+  </div>
+  <div class="grid" id="toolGrid"></div>
+  <div class="empty" id="emptyState">Nenhuma ferramenta encontrada.</div>
+</section>
+
+<section id="como" class="how">
+  <span class="eyebrow">COMO FUNCIONA</span><h2>Use sem instalar nada.</h2>
+  <div class="how-grid">
+    <div><b>01</b><h3>Escolha</h3><p>Encontre a ferramenta que resolve sua tarefa.</p></div>
+    <div><b>02</b><h3>Preencha</h3><p>Digite os dados ou selecione seu arquivo.</p></div>
+    <div><b>03</b><h3>Resultado</h3><p>Baixe, copie ou imprima na hora.</p></div>
+  </div>
+</section>
+
+<section class="pro">
+  <span>✦ NEXORA PRO — FUTURO</span><h2>Mais recursos quando o projeto crescer.</h2>
+  <p>A versão atual é gratuita. Recursos premium poderão financiar o projeto no futuro, sem bloquear as ferramentas básicas.</p>
+</section>
+
+<section id="sobre" class="about">
+  <span class="eyebrow">SOBRE</span><h2>NEXORA Tools</h2>
+  <p>Um projeto brasileiro de utilidades online feito para resolver tarefas do dia a dia com poucos cliques. A maioria das ferramentas funciona localmente no navegador.</p>
+</section>
+</main>
+<footer>© 2026 NEXORA Tools · Feito para ser simples, rápido e útil.</footer>
+
+<div class="modal" id="modal" aria-hidden="true">
+ <div class="modal-box"><button class="close" onclick="closeTool()" aria-label="Fechar">×</button><div id="toolContent"></div></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
