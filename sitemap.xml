@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://paulogame35.github.io/nexora-tools/</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://paulogame35.github.io/nexora-tools/gerador-link-whatsapp.html</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://paulogame35.github.io/nexora-tools/gerador-de-nick.html</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://paulogame35.github.io/nexora-tools/privacidade.html</loc><lastmod>2026-09-05</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://paulogame35.github.io/nexora-tools/termos.html</loc><lastmod>2026-09-05</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+<url><loc>https://paulogame35.github.io/nexora-tools/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+<url><loc>https://paulogame35.github.io/nexora-tools/gerador-link-whatsapp.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://paulogame35.github.io/nexora-tools/gerador-de-nick.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://paulogame35.github.io/nexora-tools/gerador-qr-code.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://paulogame35.github.io/nexora-tools/sobre.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://paulogame35.github.io/nexora-tools/contato.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+<url><loc>https://paulogame35.github.io/nexora-tools/ajuda.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://paulogame35.github.io/nexora-tools/privacidade.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+<url><loc>https://paulogame35.github.io/nexora-tools/termos.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>
