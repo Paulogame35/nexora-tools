@@ -1,6 +1,6 @@
 /* Google Analytics 4 — configuração centralizada do NEXORA Tools. */
 (function () {
-  const measurementId = "G-51GCTVDPF8";
+  const measurementId = "G-51GCTVDFP8";
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
   window.gtag("js", new Date());
