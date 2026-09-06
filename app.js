@@ -21,7 +21,7 @@ const tools=[
 ];
 
 function renderTools(){
- const grid=document.getElementById("toolGrid"); grid.innerHTML=tools.map(t=>`<article class="card" data-cat="${t.cat}" data-name="${(t.name+" "+t.desc).toLowerCase()}"><div class="icon">${t.icon}</div><h3>${t.name}</h3><p>${t.desc}</p><button onclick="openTool('${t.id}')">Abrir ferramenta</button></article>`).join("");
+ const grid=document.getElementById("toolGrid"); grid.innerHTML=tools.map(t=>`<article class="card" data-cat="${t.cat}" data-name="${(t.name+" "+t.desc).toLowerCase()}"><div class="icon">${t.icon}</div><h3>${t.name}</h3><p>${t.desc}</p><button onclick="openTool('${t.id}')">Usar agora <span>→</span></button></article>`).join("");
  document.getElementById("toolCount").textContent=tools.length; filterTools();
 }
 function openTool(type){
@@ -81,3 +81,6 @@ document.querySelectorAll(".cat").forEach(b=>b.addEventListener("click",()=>{doc
 document.getElementById("search").addEventListener("input",filterTools);
 function filterTools(){const cat=document.querySelector(".cat.active").dataset.cat,q=document.getElementById("search").value.toLowerCase().trim();let visible=0;document.querySelectorAll(".card").forEach(c=>{let ok=(cat==="all"||c.dataset.cat===cat)&&c.dataset.name.includes(q);c.style.display=ok?"block":"none";if(ok)visible++});document.getElementById("emptyState").style.display=visible?"none":"block"}
 renderTools();
+const menuToggle=document.getElementById("menuToggle"),mainNav=document.getElementById("mainNav");
+menuToggle?.addEventListener("click",()=>{const isOpen=mainNav.classList.toggle("open");menuToggle.setAttribute("aria-expanded",String(isOpen));menuToggle.setAttribute("aria-label",isOpen?"Fechar menu":"Abrir menu")});
+mainNav?.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{mainNav.classList.remove("open");menuToggle?.setAttribute("aria-expanded","false");menuToggle?.setAttribute("aria-label","Abrir menu")}));
