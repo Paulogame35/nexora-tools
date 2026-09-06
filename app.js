@@ -1,5 +1,6 @@
 const modal=document.getElementById("modal"),content=document.getElementById("toolContent");
 const tools=[
+{id:"nick",cat:"nick",icon:"✦",name:"Gerador de Nick",desc:"Crie nicks estilizados com símbolos para jogos."},
 {id:"whatsapp",cat:"whatsapp",icon:"💬",name:"Link do WhatsApp",desc:"Crie um link para abrir uma conversa sem salvar o número."},
 {id:"qr",cat:"qr",icon:"▦",name:"QR Code",desc:"Transforme qualquer texto ou link em QR Code."},
 {id:"percent",cat:"calc",icon:"%",name:"Porcentagem",desc:"Calcule porcentagens, descontos e acréscimos."},
@@ -21,7 +22,7 @@ const tools=[
 ];
 
 function renderTools(){
- const grid=document.getElementById("toolGrid"); grid.innerHTML=tools.map(t=>`<article class="card" data-cat="${t.cat}" data-name="${(t.name+" "+t.desc).toLowerCase()}"><div class="icon">${t.icon}</div><h3>${t.name}</h3><p>${t.desc}</p><button onclick="openTool('${t.id}')">Usar agora <span>→</span></button></article>`).join("");
+ const grid=document.getElementById("toolGrid"); grid.innerHTML=tools.map(t=>{const action=t.id==="nick"?"window.location.href='gerador-de-nick.html'":`openTool('${t.id}')`;return `<article class="card" data-cat="${t.cat}" data-name="${(t.name+" "+t.desc).toLowerCase()}"><div class="icon">${t.icon}</div><h3>${t.name}</h3><p>${t.desc}</p><button onclick="${action}">Usar agora <span>→</span></button></article>`}).join("");
  document.getElementById("toolCount").textContent=tools.length; filterTools();
 }
 function openTool(type){
