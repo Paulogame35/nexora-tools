@@ -61,12 +61,12 @@
         <a class="text-link" href="#ferramentas">Ver todas <span>→</span></a>
       </div>
       <div class="featured-grid">
-        <article class="featured-card"><div class="feature-icon">💬</div><h3>Link do WhatsApp</h3><p>Crie um link direto com mensagem personalizada.</p><button type="button" onclick="openTool('whatsapp')">Usar agora <span>→</span></button></article>
+        <article class="featured-card"><div class="feature-icon">⌁</div><h3>Link do WhatsApp</h3><p>Crie um link direto com mensagem personalizada.</p><a class="card-action" href="gerador-link-whatsapp.html">Usar agora <span>→</span></a></article>
         <article class="featured-card"><div class="feature-icon">▦</div><h3>Gerador de QR Code</h3><p>Transforme textos e links em QR Code para baixar.</p><button type="button" onclick="openTool('qr')">Usar agora <span>→</span></button></article>
         <article class="featured-card"><div class="feature-icon">PDF</div><h3>Ferramentas PDF</h3><p>Converta uma imagem em PDF direto no navegador.</p><button type="button" onclick="openTool('image-pdf')">Usar agora <span>→</span></button></article>
         <article class="featured-card"><div class="feature-icon">◫</div><h3>Ferramentas de imagem</h3><p>Comprima, redimensione e converta suas imagens.</p><button type="button" onclick="openTool('image-compress')">Usar agora <span>→</span></button></article>
         <article class="featured-card"><div class="feature-icon">%</div><h3>Calculadoras</h3><p>Resolva porcentagens, regra de três e muito mais.</p><button type="button" onclick="openTool('percent')">Usar agora <span>→</span></button></article>
-        <article class="featured-card"><div class="feature-icon">Aa</div><h3>Ferramentas de texto</h3><p>Conte, transforme e crie slugs em poucos cliques.</p><button type="button" onclick="openTool('counter')">Usar agora <span>→</span></button></article>
+        <article class="featured-card"><div class="feature-icon">✦</div><h3>Gerador de Nick</h3><p>Monte nicks estilizados para Free Fire e outros jogos.</p><a class="card-action" href="gerador-de-nick.html">Criar nick <span>→</span></a></article>
       </div>
     </section>
 
@@ -84,6 +84,7 @@
         <button class="cat" type="button" data-cat="pdf">PDF</button>
         <button class="cat" type="button" data-cat="docs">Documentos</button>
         <button class="cat" type="button" data-cat="text">Texto</button>
+        <button class="cat" type="button" data-cat="nick">Nicks</button>
       </div>
       <div class="grid" id="toolGrid"></div>
       <div class="empty" id="emptyState">Nenhuma ferramenta encontrada. Tente outra busca ou categoria.</div>
@@ -103,12 +104,12 @@
         <p class="eyebrow">LINK DO WHATSAPP</p>
         <h2>Crie um link do WhatsApp com mensagem</h2>
         <p>Informe o número com DDD, escreva uma mensagem opcional e gere um link para compartilhar em redes sociais, sites, cartões digitais e perfis comerciais.</p>
-        <button class="button button-primary" type="button" onclick="openTool('whatsapp')">Criar link do WhatsApp <span>→</span></button>
+        <a class="button button-primary" href="gerador-link-whatsapp.html">Criar link do WhatsApp <span>→</span></a>
       </article>
       <article class="info-card nick-card">
         <p class="eyebrow">EM PREPARAÇÃO</p>
         <h2>Gerador de Nick</h2>
-        <p>Uma futura ferramenta organizada para criar nicks com letras estilizadas, símbolos, decorações e visualização em tempo real — sem despejar listas gigantes na página.</p>
+        <p>Crie nicks com letras estilizadas, símbolos, decorações e visualização em tempo real — sem despejar listas gigantes na página.</p><a class="button button-secondary" href="gerador-de-nick.html">Abrir Gerador de Nick <span>→</span></a>
       </article>
     </section>
 
@@ -119,6 +120,15 @@
         <details><summary>As ferramentas são gratuitas?</summary><p>Sim. As ferramentas disponíveis atualmente podem ser usadas gratuitamente.</p></details>
         <details><summary>Meus arquivos são enviados para algum servidor?</summary><p>As ferramentas de imagem, texto, cálculos e documentos deste projeto processam os dados diretamente no navegador.</p></details>
         <details><summary>O QR Code ou PDF não foi gerado. O que fazer?</summary><p>Verifique se há conexão com a internet, pois as bibliotecas de QR Code e PDF são carregadas por CDN. Depois, atualize a página e tente novamente.</p></details>
+      </div>
+    </section>
+
+    <section class="tips section-wrap" id="dicas" aria-labelledby="tips-title">
+      <div class="section-heading"><div><p class="eyebrow">DICAS</p><h2 id="tips-title">Use melhor as ferramentas</h2></div></div>
+      <div class="tips-grid">
+        <article><span class="tip-icon">⌁</span><h3>Link do WhatsApp para perfil</h3><p>Use uma mensagem curta e objetiva para facilitar o primeiro contato em redes sociais e cartões digitais.</p><a href="gerador-link-whatsapp.html">Criar um link <span>→</span></a></article>
+        <article><span class="tip-icon">▦</span><h3>QR Code que funciona</h3><p>Prefira links curtos e teste a leitura com a câmera antes de imprimir ou compartilhar.</p><button type="button" onclick="openTool('qr')">Gerar QR Code <span>→</span></button></article>
+        <article><span class="tip-icon">✦</span><h3>Nick legível no jogo</h3><p>Combine poucos símbolos com letras claras para criar um nome marcante sem perder a leitura.</p><a href="gerador-de-nick.html">Montar um nick <span>→</span></a></article>
       </div>
     </section>
 
