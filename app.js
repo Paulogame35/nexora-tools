@@ -1,24 +1,24 @@
 const modal=document.getElementById("modal"),content=document.getElementById("toolContent");
 const tools=[
 {id:"nick",cat:"nick",icon:"✦",name:"Gerador de Nick",desc:"Crie nicks estilizados com símbolos para jogos."},
-{id:"whatsapp",cat:"whatsapp",icon:"💬",name:"Link do WhatsApp",desc:"Crie um link para abrir uma conversa sem salvar o número."},
+{id:"whatsapp",cat:"whatsapp",icon:"↗",name:"Link do WhatsApp",desc:"Crie um link para abrir uma conversa sem salvar o número."},
 {id:"qr",cat:"qr",icon:"▦",name:"QR Code",desc:"Transforme qualquer texto ou link em QR Code."},
 {id:"percent",cat:"calc",icon:"%",name:"Porcentagem",desc:"Calcule porcentagens, descontos e acréscimos."},
 {id:"rule3",cat:"calc",icon:"➗",name:"Regra de 3",desc:"Resolva uma regra de três automaticamente."},
 {id:"salary",cat:"calc",icon:"R$",name:"Calculadora de salário",desc:"Veja descontos estimados de INSS e IRRF de forma educativa."},
 {id:"discount",cat:"calc",icon:"%",name:"Desconto e acréscimo",desc:"Descubra o preço final com desconto ou aumento."},
-{id:"age",cat:"calc",icon:"🎂",name:"Calculadora de idade",desc:"Calcule idade e próximo aniversário."},
+{id:"age",cat:"calc",icon:"◌",name:"Calculadora de idade",desc:"Calcule idade e próximo aniversário."},
 {id:"counter",cat:"text",icon:"Aa",name:"Contador de texto",desc:"Conte palavras, caracteres, linhas e espaços."},
 {id:"upper",cat:"text",icon:"A",name:"Maiúsculas e minúsculas",desc:"Transforme seu texto em MAIÚSCULO, minúsculo ou título."},
 {id:"slug",cat:"text",icon:"#",name:"Gerador de slug",desc:"Converta um título em URL amigável."},
-{id:"image-compress",cat:"image",icon:"🗜",name:"Comprimir imagem",desc:"Reduza o tamanho de JPG, PNG ou WebP no navegador."},
+{id:"image-compress",cat:"image",icon:"◇",name:"Comprimir imagem",desc:"Reduza o tamanho de JPG, PNG ou WebP no navegador."},
 {id:"image-resize",cat:"image",icon:"↔",name:"Redimensionar imagem",desc:"Mude largura e altura de uma imagem."},
-{id:"image-convert",cat:"image",icon:"🖼",name:"Converter imagem",desc:"Converta imagens para JPG, PNG ou WebP."},
+{id:"image-convert",cat:"image",icon:"◒",name:"Converter imagem",desc:"Converta imagens para JPG, PNG ou WebP."},
 {id:"image-pdf",cat:"pdf",icon:"PDF",name:"Imagem → PDF",desc:"Transforme uma imagem em PDF no seu navegador."},
-{id:"cv",cat:"docs",icon:"📄",name:"Gerador de currículo",desc:"Monte um currículo e salve como PDF."},
-{id:"receipt",cat:"docs",icon:"🧾",name:"Recibo simples",desc:"Crie um recibo pronto para imprimir ou salvar em PDF."},
-{id:"declaration",cat:"docs",icon:"📑",name:"Declaração",desc:"Monte uma declaração simples e imprimível."},
-{id:"budget",cat:"docs",icon:"📋",name:"Orçamento",desc:"Crie um orçamento simples com itens e total."}
+{id:"cv",cat:"docs",icon:"CV",name:"Gerador de currículo",desc:"Monte um currículo e salve como PDF."},
+{id:"receipt",cat:"docs",icon:"↳",name:"Recibo simples",desc:"Crie um recibo pronto para imprimir ou salvar em PDF."},
+{id:"declaration",cat:"docs",icon:"§",name:"Declaração",desc:"Monte uma declaração simples e imprimível."},
+{id:"budget",cat:"docs",icon:"≡",name:"Orçamento",desc:"Crie um orçamento simples com itens e total."}
 ];
 
 function renderTools(){
