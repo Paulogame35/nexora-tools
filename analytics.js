@@ -79,7 +79,11 @@
   function save(analytics) {
     const record = { version: VERSION, analytics: analytics === true, savedAt: Date.now() };
     let persistent = true;
-    try { localStorage.setItem(KEY, JSON.stringify(record)); } catch (_) { persistent = false; }
+    try { localStorage.setItem(KEY, JSON.stringify(record)); } catch (_) {
+      persistent = false;
+      // Não deixe uma autorização anterior sobreviver a uma recusa não gravada.
+      try { localStorage.removeItem(KEY); } catch (_) {}
+    }
     apply(record); hide();
     status.textContent = (analytics ? 'Medição permitida.' : 'Medição recusada. Você pode usar todas as ferramentas.') +
       (persistent ? ' Altere a escolha em Preferências de privacidade no rodapé.' : ' O navegador não permitiu salvar a escolha; ela vale somente nesta página.');
